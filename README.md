@@ -77,7 +77,7 @@ release: bundle exec rake db:migrate
 
 ## Add Config Vars
 - Go to your app settings on Heroku and set the following variables:
-    - SINATRA_ENV = development
+    - SINATRA_ENV = production
     - SESSION_SECRET = 335673ae2a1c5cccec147456
 - Ensure your local .env variables only load in development so they don't override the Heroku variables:
     - In your config/environment.rb:
